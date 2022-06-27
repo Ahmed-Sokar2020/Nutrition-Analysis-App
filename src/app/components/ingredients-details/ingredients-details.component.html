@@ -1,0 +1,80 @@
+<div class="sidebar" *ngIf="ingredientDetails" >
+  <h2 class="text-center fw-bold fs-2 pb-2">Nutrition Facts</h2>
+  <p class="mb-0 fw-bold fs-normal">Amount Per Serving</p>
+
+  <div class="calories d-flex justify-content-between align-items-center pb-1">
+    <span class="fw-bold fs-3">Calories</span>
+    <span>{{ingredientDetails.calories}}</span>
+  </div>
+
+  <div class="daily-value text-end pt-1 pb-1">% Daily Value*</div>
+
+  <div class="fat d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Total Fat <span class="fw-normal">{{ingredientDetails.fat}} g</span></span>
+    <span class="fw-bold">28%</span>
+  </div>
+  <div class="fat-details">
+    <div class="saturated-fat d-flex justify-content-between align-items-center pb-1 pt-1">
+      <span>Saturated Fat 2g</span>
+      <span class="fw-bold">10%</span>
+    </div>
+    <div class="trans-fat">Trans Fat-</div>
+  </div>
+
+  <div class="colesterol d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Cholesterole <span class="fw-normal">{{ingredientDetails.cholesterol}} mg</span></span>
+    <span class="fw-bold">0%</span>
+  </div>
+
+  <div class="sodium d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Sodium <span class="fw-normal">{{ingredientDetails.sodium}} mg</span></span>
+    <span class="fw-bold">3%</span>
+  </div>
+
+
+  <div class="carbohydrate d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Total Carbohydrate <span class="fw-normal">{{ingredientDetails.carbohydrate}} g</span></span>
+    <span class="fw-bold">111%</span>
+  </div>
+  <div class="carbohydrate-details">
+    <div class="fiber d-flex justify-content-between align-items-center pb-1 pt-1">
+      <span>Dietary Fiber <span class="fw-normal">{{ingredientDetails.fiber}} g</span></span>
+      <span class="fw-bold">138%</span>
+    </div>
+    <div class="sugars">Total Sugars <span class="fw-normal">{{ingredientDetails.sugars}} g</span></div>
+    <div class="trans-fat">Includes-Added Sugars</div>
+  </div>
+
+  <div class="protein d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Protein <span class="fw-normal">{{ingredientDetails.protein}} mg</span></span>
+    <span class="fw-bold">142%</span>
+  </div>
+
+  <div class="vitamin d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Vitamin <span class="fw-normal">{{ingredientDetails.vitaminD}} mg</span></span>
+    <span class="fw-bold">0%</span>
+  </div>
+
+  <div class="calcium d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Calcium <span class="fw-normal">{{ingredientDetails.calcium}} mg</span></span>
+    <span class="fw-bold">18%</span>
+  </div>
+
+  <div class="iron d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Iron <span class="fw-normal">{{ingredientDetails.iron}} mg</span></span>
+    <span class="fw-bold">77%</span>
+  </div>
+
+  <div class="potassium d-flex justify-content-between align-items-center pb-1 pt-1">
+    <span class="fw-bold fs-6">Potassium <span class="fw-normal">{{ingredientDetails.potassium}} mg</span></span>
+    <span class="fw-bold">47%</span>
+  </div>
+
+  <p class="percent">*Percent Daily Values are besed on a 2000 calorie diet </p>
+
+</div>
+
+
+
+
+

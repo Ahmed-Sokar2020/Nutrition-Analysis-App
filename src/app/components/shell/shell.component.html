@@ -1,0 +1,14 @@
+<div class="shell container-fluid p-5">
+  <div class="row">
+    <div class="nutrition-main col-sm-12 col-md-8">
+      <app-ingredients-form (formEvent)="showDetails($event)"></app-ingredients-form>
+      <app-ingredients-list *ngIf="recievedDetailsArray.length > 0" [ingredientDetails]="recievedDetailsArray" ></app-ingredients-list>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <app-ingredients-details *ngIf="recievedDetailsArray.length > 0"></app-ingredients-details>
+    </div>
+
+  </div>
+</div>
+

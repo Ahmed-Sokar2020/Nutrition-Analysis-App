@@ -1,0 +1,108 @@
+<div>
+  <p>Enter a query like: "1 cup rice, 2 ounce chickpeas" to see how it works"</p>
+  <form [formGroup]="ingredientsForm" >
+    <label class="form-label fs-4 fw-bold">Enter Recipe Ingredients</label>
+    <div class="form-group mt-3">
+      <textarea
+      class="form-control"
+      rows="5"
+      placeholder="1 cup rice, 2 ounce chickpeas"
+      formControlName="ingredients"
+      [class.is-invalid]="myForm['ingredients'].invalid && myForm['ingredients'].touched">
+      </textarea>
+      <div *ngIf="myForm['ingredients'].invalid && myForm['ingredients'].touched || isSubmitted">
+        <small class="text-danger" *ngIf="myForm['ingredients']['errors']?.['required']">
+          Ingredients is required</small>
+      </div>
+    </div>
+
+    <div class="form-group" class="text-center">
+      <input type="submit"
+      value="ANALYZE RECIPE"
+      class="btn btn-success mt-3 mb-3"
+      (click)="onSubmit()">
+    </div>
+  </form>
+</div>
+
+
+
+
+
+<!-- <div class="form-group mt-2 ">
+      <label class="form-label">Quantity</label>
+      <input
+      ngModel
+      type="text"
+      class="form-control"
+      formControlName="quantity"
+      [class.is-invalid]="myForm['quantity'].invalid && myForm['quantity'].touched">
+      <p class="text-center text-secondary">{{ingredientForm.value}}</p>
+      <div *ngIf="myForm['quantity'].invalid && myForm['quantity'].touched || isSubmitted">
+        <small class="text-danger" *ngIf="myForm['quantity']['errors']?.['required']">
+          Quantity is required</small>
+      </div>
+    </div>
+
+    <div class="form-group mt-2">
+      <label class="form-label">Unit</label>
+      <input
+      ngModel
+      type="text"
+      class="form-control"
+      formControlName="unit"
+      [class.is-invalid]="myForm['unit'].invalid && myForm['unit'].touched">
+      <p class="text-center text-secondary">{{ingredientForm.value}}</p>
+      <div *ngIf="myForm['unit'].invalid && myForm['unit'].touched || isSubmitted">
+        <small class="text-danger" *ngIf="myForm['unit']['errors']?.['required']">
+          Quantity is required</small>
+      </div>
+    </div>
+
+    <div class="form-group mt-2">
+      <label class="form-label">Food</label>
+      <input
+      ngModel
+      type="text"
+      class="form-control"
+      formControlName="food"
+      [class.is-invalid]="myForm['food'].invalid && myForm['food'].touched">
+      <p class="text-center text-secondary">{{ingredientForm.value}}</p>
+      <div *ngIf="myForm['food'].invalid && myForm['food'].touched || isSubmitted">
+        <small class="text-danger" *ngIf="myForm['food']['errors']?.['required']">
+          Quantity is required</small>
+      </div>
+    </div>
+
+    <div class="form-group mt-2">
+      <label class="form-label">Calories</label>
+      <input
+      ngModel
+      type="text"
+      class="form-control"
+      formControlName="calories"
+      [class.is-invalid]="myForm['calories'].invalid && myForm['calories'].touched">
+      <p class="text-center text-secondary">{{ingredientForm.value}}</p>
+      <div *ngIf="myForm['calories'].invalid && myForm['calories'].touched || isSubmitted">
+        <small class="text-danger" *ngIf="myForm['calories']['errors']?.['required']">
+          Quantity is required</small>
+      </div>
+    </div>
+
+    <div class="form-group mt-2">
+      <label class="form-label">Weight</label>
+      <input
+      ngModel
+      type="text"
+      class="form-control"
+      formControlName="weight"
+      [class.is-invalid]="myForm['weight'].invalid && myForm['weight'].touched">
+      <p class="text-center text-secondary">{{ingredientForm.value}}</p>
+      <div *ngIf="myForm['weight'].invalid && myForm['weight'].touched || isSubmitted">
+        <small class="text-danger" *ngIf="myForm['weight']['errors']?.['required']">
+          Quantity is required</small>
+      </div>
+    </div> -->
+
+
+

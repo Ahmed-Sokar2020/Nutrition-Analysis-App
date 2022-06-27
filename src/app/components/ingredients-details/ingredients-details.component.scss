@@ -1,0 +1,94 @@
+.sidebar {
+  background-color: white;
+  border: 1px solid black;
+  padding: 15px;
+  // position: fixed;
+
+  h2:first-child {
+    border-bottom: 7px solid black;
+  }
+
+  .percent {
+    font-weight: bold;
+    font-size: smaller;
+    padding-top: 20px;
+  }
+
+}
+
+.sidebar :is(.fat-details, .carbohydrate-details) {
+  padding-left: 15px;
+}
+
+.sidebar :is(.calories, .daily-value, .sodium, .sugars) {
+  border-bottom: 2px solid black;
+}
+
+.sidebar :is(.saturated-fat, .colesterol, .fiber, .protein, .calcium, .potassium) {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+  // .calories {
+  //   border-bottom: 4px solid black;
+  // }
+
+  // .daily-value {
+  //   border-bottom: 2px solid black;
+  // }
+
+  // .saturated-fat {
+  //   border-top: 2px solid black;
+  //   border-bottom: 2px solid black;
+  // }
+
+  // .colesterol {
+  //   border-top: 2px solid black;
+  //   border-bottom: 2px solid black;
+  // }
+
+  // .sodium {
+  //   border-bottom: 2px solid black;
+  // }
+
+  // .carbohydrate-details {
+
+    // .fiber {
+    //   border-top: 2px solid black;
+    //   border-bottom: 2px solid black;
+    // }
+
+    // .sugars {
+    //   border-bottom: 2px solid black;
+    // }
+  // }
+
+  // .protein {
+  //   border-top: 2px solid black;
+  //   border-bottom: 2px solid black;
+  // }
+
+  // .calcium {
+  //   border-top: 2px solid black;
+  //   border-bottom: 2px solid black;
+  // }
+
+  // .iron {
+  //   border-bottom: 2px solid black;
+  // }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<div class="table-responsive" *ngIf="ingredientDetails">
+  <table class="table table-bordered">
+    <thead class="table-dark text-center">
+      <tr>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit</th>
+        <th scope="col">Food</th>
+        <th scope="col">Calories</th>
+        <th scope="col">Weight</th>
+      </tr>
+    </thead>
+    <tbody class="text-center" *ngFor="let ingredient of ingredientDetails">
+      <tr>
+        <td>{{ingredient?.quantity}}</td>
+        <td>{{ingredient?.unit}}</td>
+        <td>{{ingredient?.foodName}}</td>
+        <td>{{ingredient?.calories}} kcal</td>
+        <td>{{ingredient?.weight}} g</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
